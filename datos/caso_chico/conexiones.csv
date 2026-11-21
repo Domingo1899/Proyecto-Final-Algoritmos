@@ -1,0 +1,7 @@
+conexion_id,origen,destino,tiempo_min
+K1,D,A,4
+K2,D,X,3
+K3,X,B,2
+K4,A,B,5
+K5,B,C,3
+K6,X,C,6

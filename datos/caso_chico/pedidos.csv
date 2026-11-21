@@ -1,0 +1,4 @@
+pedido_id,nodo_id,cajas,prioridad,servicio_min
+PA,A,2,5,2
+PB,B,3,8,3
+PC,C,4,9,2

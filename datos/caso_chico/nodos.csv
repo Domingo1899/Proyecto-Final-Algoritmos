@@ -1,0 +1,6 @@
+nodo_id,tipo,nombre,x,y
+D,deposito,Deposito,0.0,0.0
+A,centro,Centro A,0.0,1.0
+B,centro,Centro B,1.0,1.0
+C,centro,Centro C,2.0,1.0
+X,interseccion,Cruce X,1.0,0.0

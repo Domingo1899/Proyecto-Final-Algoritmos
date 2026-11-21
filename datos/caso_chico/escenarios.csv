@@ -1,0 +1,4 @@
+escenario_id,descripcion,deposito_id,capacidad_cajas,limite_tiempo_min
+S1,Capacidad limita,D,7,30
+S2,Tiempo limita,D,10,25
+S3,Igualdad en el limite de tiempo,D,10,27
