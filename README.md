@@ -4,7 +4,7 @@ Trabajo final grupal ALGABO 2026 (UCU). Selección y ruteo de pedidos de libros
 con un vehículo de capacidad limitada y tiempo máximo: solución exacta vs.
 heurística en Python.
 
-**Integrantes:** Domingo Leiva, _completar_, _completar_, _completar_
+**Integrantes:** Domingo Leiva, Facundo Diaz, Santiago Alba, Marcos Devincenzi
 
 ## El problema
 
