@@ -29,6 +29,7 @@ src/
   datos.py             carga y validación de los CSV
   grafo.py             Dijkstra y armado del recorrido completo
   verificador.py       control independiente de cada plan
+  exacto.py            solución de referencia: Held-Karp con poda
   generar_adaptado.py  genera datos/adaptado (semilla 2026)
 tests/
   test_caso_chico.py   compara el código con el caso chico
@@ -44,7 +45,12 @@ python3 src/datos.py datos/original      # valida el dataset original
 python3 src/datos.py datos/adaptado      # valida el dataset adaptado
 python3 src/generar_adaptado.py          # regenera el dataset adaptado
 python3 tests/test_caso_chico.py         # prueba con el caso chico
+python3 src/exacto.py                    # resuelve todos los escenarios con el exacto
 ```
+
+## Notas
+
+- `src/exacto.py` tarda unos 15 s y usa ~1,2 GB de memoria en el escenario A_AMPLIO.
 
 ## Semillas
 
