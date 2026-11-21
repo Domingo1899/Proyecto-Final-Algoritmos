@@ -1,0 +1,5 @@
+escenario_id,descripcion,deposito_id,capacidad_cajas,limite_tiempo_min
+A_BASE,Red ampliada - condiciones de referencia,N00,30,200
+A_CAPACIDAD,Red ampliada - menor capacidad,N00,18,200
+A_TIEMPO,Red ampliada - menor tiempo,N00,30,130
+A_AMPLIO,Red ampliada - vehiculo grande y jornada larga,N00,50,320
