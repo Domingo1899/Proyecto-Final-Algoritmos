@@ -16,7 +16,8 @@ límite (viaje + descarga). Si dos planes empatan en prioridad, gana el más cor
 ## Requisitos
 
 - Python 3.10 o superior (probado con Python 3.14)
-- Solo la biblioteca estándar, no hay que instalar nada
+- Biblioteca estándar para todo el análisis
+- `matplotlib` solo para los gráficos: `pip install -r requirements.txt`
 
 ## Estructura
 
@@ -31,10 +32,16 @@ src/
   verificador.py       control independiente de cada plan
   exacto.py            solución de referencia: Held-Karp con poda
   genetico.py          solución propuesta: algoritmo genético + 2-opt
+  experimentos.py      corre los dos métodos y guarda las tablas
+  graficos.py          genera los gráficos a partir de las tablas
   generar_adaptado.py  genera datos/adaptado (semilla 2026)
 tests/
   test_caso_chico.py   compara el código con el caso chico
-resultados/            tablas y gráficos de la comparación
+resultados/
+  comparacion.csv      una fila por ejecución (con el recorrido completo)
+  resumen.csv          una fila por escenario
+  entorno.txt          Python y computadora usada
+  *.png                gráficos del informe
 ```
 
 ## Cómo ejecutar
@@ -48,11 +55,15 @@ python3 src/generar_adaptado.py          # regenera el dataset adaptado
 python3 tests/test_caso_chico.py         # prueba con el caso chico
 python3 src/exacto.py                    # resuelve todos los escenarios con el exacto
 python3 src/genetico.py                  # resuelve todos los escenarios con el genético
+python3 src/experimentos.py              # comparación completa -> resultados/ (~20 s)
+python3 src/graficos.py                  # gráficos -> resultados/
 ```
 
 ## Notas
 
 - `src/exacto.py` tarda unos 15 s y usa ~1,2 GB de memoria en el escenario A_AMPLIO.
+- Tiempo de cálculo: medido con `time.perf_counter()` (reloj de pared, segundos),
+  una ejecución por método, escenario y semilla. Incluye el cálculo de Dijkstra.
 
 ## Semillas
 

@@ -1,0 +1,8 @@
+escenario,capacidad,limite,exacto_prioridad,exacto_total,exacto_segundos,ag_prioridad_media,ag_prioridad_min,ag_prioridad_max,ag_total_medio,ag_segundos_medio,ag_semillas_optimas,todos_factibles
+E_BASE,18,130,79,96,0.0018,79,79,79,96,0.0344,5,True
+E_CAPACIDAD,12,130,53,82,0.0005,53,53,53,82,0.0178,5,True
+E_TIEMPO,18,95,78,95,0.0012,78,78,78,95,0.0224,5,True
+A_BASE,30,200,138,194,0.3795,137.8,137,138,193.4,0.2571,4,True
+A_CAPACIDAD,18,200,88,158,0.0237,88,88,88,158,0.1112,5,True
+A_TIEMPO,30,130,121,124,0.0082,116.2,113,121,123.4,0.1497,2,True
+A_AMPLIO,50,320,222,267,13.8718,222,222,222,280,0.6033,0,True
