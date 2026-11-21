@@ -30,6 +30,7 @@ src/
   grafo.py             Dijkstra y armado del recorrido completo
   verificador.py       control independiente de cada plan
   exacto.py            solución de referencia: Held-Karp con poda
+  genetico.py          solución propuesta: algoritmo genético + 2-opt
   generar_adaptado.py  genera datos/adaptado (semilla 2026)
 tests/
   test_caso_chico.py   compara el código con el caso chico
@@ -46,6 +47,7 @@ python3 src/datos.py datos/adaptado      # valida el dataset adaptado
 python3 src/generar_adaptado.py          # regenera el dataset adaptado
 python3 tests/test_caso_chico.py         # prueba con el caso chico
 python3 src/exacto.py                    # resuelve todos los escenarios con el exacto
+python3 src/genetico.py                  # resuelve todos los escenarios con el genético
 ```
 
 ## Notas
@@ -55,6 +57,7 @@ python3 src/exacto.py                    # resuelve todos los escenarios con el 
 ## Semillas
 
 - Dataset adaptado: semilla 2026 (`src/generar_adaptado.py`)
+- Algoritmo genético: semillas 11, 22, 33, 44 y 55 (`src/genetico.py`)
 
 ## Uso de IA
 
